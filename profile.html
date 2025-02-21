@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Notes</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header id="header">
+        <!-- first and last name -->
+        <h2 id="printName"></h2>
+        <!-- ///////////////////////////////////////////////////////// -->
+        <input
+          id="LogOutButton"
+        
+          type="submit"
+          value="Log Out"
+        />
+      </header>
+
+      <main id="main">
+        <form id="newNote">
+          <input
+            id="newNoteField"
+            type="text"
+            placeholder="Write Your Note"
+            required
+          />
+          <input id="newNoteButton" type="submit" value="Create" />
+        </form>
+
+        <div id="headerOfNotes"></div>
+        <div id="allNotes">
+          <!-- all the notes every note in div  -->
+        </div>
+      </main>
+
+      <div id="outPage">
+        <div id="error"></div>
+        <form>
+          <textarea id="textArea"></textarea>
+          <input type="submit" id="up" value="Update" />
+          <span id="cancel" >❎</span>
+        </form>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>

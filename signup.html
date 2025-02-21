@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📝 NoteTaking App</h1>
+      <p>Your thoughts, organized and safe.</p>
+    </header>
+    <main>
+      <form id="sinUp" method="POST">
+        <div id="signIn">Create Account</div>
+        <div id="errorOfSinIn"></div>
+        <input
+          type="text"
+          placeholder="First Name"
+          id="firstName"
+          name="firstName"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          id="lastName"
+          name="lastName"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          id="createEmail"
+          name="createEmail"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          id="createPassword"
+          name="createPassword"
+          required
+        />
+        <h5 id="er"></h5>
+        <input type="submit" value="Create" id="CreateButton" />
+        <a id="logInLink" href="profile.html">Login</a>
+      </form>
+      <div class="custom-shape-divider-bottom-1739489757">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </main>
+
+    <!-- ////////////////////////////////////////////////////////////// -->
+    <script src="signup.js"></script>
+  </body>
+</html>

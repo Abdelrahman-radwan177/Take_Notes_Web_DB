@@ -1,0 +1,214 @@
+/* Reset بعض العناصر الأساسية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنسيق الهيدر */
+/* تنسيق زر Home */
+#homeButton {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  background-color: #2fb33d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#homeButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+header {
+  background: linear-gradient(135deg, #2fb33d, #00450f); /* تدرج لوني */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* تنسيق العنوان داخل الهيدر */
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* مسافة بين الأيقونة والنص */
+}
+
+header p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8); /* لون شبه شفاف */
+  margin-top: 5px;
+}
+
+/* تنسيق عام للصفحة */
+main {
+  font-family: Arial, sans-serif;
+  background-color: #0b5b71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+/* تنسيق الفورم */
+#sinUp {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin-top: 100px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* ظل أقوى */
+  position: relative;
+  z-index: 1;
+}
+
+/* تنسيق كلمة Create Account */
+#signIn {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745; /* لون أخضر */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* تنسيق حقول الإدخال */
+#sinUp input[type="text"],
+#sinUp input[type="email"],
+#sinUp input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#sinUp input[type="text"]:focus,
+#sinUp input[type="email"]:focus,
+#sinUp input[type="password"]:focus {
+  border-color: #218838; /* لون أخضر داكن عند التركيز */
+  transform: scale(1.02); /* تكبير بسيط عند التركيز */
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3); /* ظل أخضر خفيف */
+}
+
+/* تنسيق زر الإنشاء */
+#sinUp input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sinUp input[type="submit"]:hover {
+  background-color: #218838; /* لون أخضر داكن عند التحويم */
+  transform: scale(1.05); /* تكبير الزر */
+  transition: transform 0.3s ease;
+}
+
+/* تنسيق رابط Login */
+#logInLink {
+  display: block;
+  margin-top: 20px;
+  color: #28a745; /* لون أخضر */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  cursor: pointer; /* التأكد من ظهور المؤشر كرابط */
+}
+
+#logInLink:hover {
+  color: #218838; /* لون أخضر داكن عند التحويم */
+  text-decoration: underline; /* إضافة خط تحت النص */
+}
+
+/* تأثير ظهور الفورم */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#sinUp {
+  animation: fadeIn 0.8s ease-out; /* تطبيق التأثير */
+}
+
+/* تنسيق للهواتف المحمولة */
+@media (max-width: 480px) {
+  #sinUp {
+    padding: 20px;
+    margin-top: 80px; /* تقليل المسافة من الأعلى للهواتف */
+  }
+
+  #signIn {
+    font-size: 1.8rem; /* تصغير حجم النص للهواتف */
+  }
+
+  #sinUp input[type="text"],
+  #sinUp input[type="email"],
+  #sinUp input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #sinUp input[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #logInLink {
+    font-size: 12px;
+  }
+}
+
+/* تنسيق الشكل المموج في الأسفل */
+.custom-shape-divider-bottom-1739489757 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1739489757 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 126px;
+}
+
+.custom-shape-divider-bottom-1739489757 .shape-fill {
+  fill: #2a2929;
+}
